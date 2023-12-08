@@ -5,9 +5,16 @@ import (
 	"log"
 
 	"example.com/greetings"
+	"golang.org/x/example/hello/reverse"
 )
 
 func main() {
+	fmt.Println(reverse.String("Aimyon"), reverse.Int(10969))
+
+	// exec_greetings()
+}
+
+func exec_greetings() {
 	// 设置日志的前缀，这将在所有日志消息之前显示。
 	log.SetPrefix("greetings: ")
 	// 设置日志的标志。这里设置为0表示无特殊标志，即仅打印日志消息，不包括日期时间等信息。
